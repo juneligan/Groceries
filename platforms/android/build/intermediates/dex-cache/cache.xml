@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/exploded-aar/Groceries/runtime/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="632bf39700c28ba66c117628dab343126ef89551">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/Groceries-runtime-unspecified_fddbc4032b1ab02ec14764bd062e2f861f5c1f5f.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/exploded-aar/widgets-release/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="8a73b09319cc3945912970487ced4c7724acc97d">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/intermediates-exploded-aar-widgets-release_1a7ce768ca2623ce5899e268443e5ddfdc274c5e.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-support-vector-drawable-23.4.0_cf646d2fc5a8885d456aad9ea1592aee9be9a830.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-support-v4-23.4.0_d3a07909afb20b812d3573830ed41ab483590185.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/my-workspace/android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/support-annotations-23.4.0_a67498005cfdbdb7e5453f569d2e2b63623b028f.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/exploded-aar/com.couchbase.lite/couchbase-lite-android-sqlite-custom/1.3.1/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="c82bc8adb671652b83ea2d785d0847435e4f3442">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.couchbase.lite-couchbase-lite-android-sqlite-custom-1.3.1_0ee0dcb11ec35c4740ae8403192fe0d0baec7f7d.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/internal_impl-23.4.0_1e8d4a9d072d1ca671b73e3a479d37d3bfdc844e.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-appcompat-v7-23.4.0_6f1f968e29e034a09bf15ada1e03774796b71d75.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/exploded-aar/com.couchbase.lite/couchbase-lite-android/1.3.1/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="2ce3006140ca3087f08a9f0ba1211255253474c5">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.couchbase.lite-couchbase-lite-android-1.3.1_11645afe4c38091a71900ab4d51923c9e72a1256.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.5.0/b2ece1bd57ac7b4c315b7505b65ac79cb1da4270/jackson-core-2.5.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="b2ece1bd57ac7b4c315b7505b65ac79cb1da4270">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/jackson-core-2.5.0_dc0a3246452ca105dd1ccb5b623b93cf5839c4b0.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/okio-1.8.0_777f3a8b5a93b731f244eedbe9ce7109e924a7cd.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-animated-vector-drawable-23.4.0_63e1fd82a953b16037b974e463136d9245448455.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.1/19047bdb6a4fc00a44124f64ca98e88fc204e7e3/okhttp-3.3.1.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/okhttp-3.3.1_aa5489e63b1961ff3043953ea0d176f1f247c224.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.5.0/a2a55a3375bc1cef830ca426d68d2ea22961190e/jackson-annotations-2.5.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="a2a55a3375bc1cef830ca426d68d2ea22961190e">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/jackson-annotations-2.5.0_d8e69254c736117c7a4bb91255adf0c4af2d7ac0.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.5.0/489b7552dd3322b63f694122d16ce62c21c303b5/jackson-databind-2.5.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="489b7552dd3322b63f694122d16ce62c21c303b5">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/jackson-databind-2.5.0_e417137b8bb9253662f8a45a16f66f163305c605.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.2/f1bc476cc167b18e66c297df599b2377131a8947/gson-2.6.2.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/gson-2.6.2_3b11626b0d7db62802c3473b513dbfcbb2ab1519.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-design-23.4.0_2d9bba2f68e9f798c539a1918725a797a093f1e5.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/.gradle/caches/modules-2/files-2.1/com.couchbase.lite/couchbase-lite-java-core/1.3.1/3807f8d70802e9bee03617bc9d0b1a0bbbdab656/couchbase-lite-java-core-1.3.1.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="3807f8d70802e9bee03617bc9d0b1a0bbbdab656">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/couchbase-lite-java-core-1.3.1_6265c29a2e6871a4da5dbb512bbd1d762b056a18.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/.gradle/caches/modules-2/files-2.1/com.github.oxo42/stateless4j/2.4.0/128aca4ace585f0b42faa739d0b968a154debb7a/stateless4j-2.4.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="128aca4ace585f0b42faa739d0b968a154debb7a">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/stateless4j-2.4.0_f340fbc2cdeb2b0f04aae2910c2c709355d45619.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/com.android.support-recyclerview-v7-23.4.0_09c49eb73ebaf135a80021ca01421e9c3640a381.jar" />
+    </item>
+    <item
+        jar="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/exploded-aar/Groceries/runtime/unspecified/jars/libs/binding-generator.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="d82f3ca98719f09b65db6aeaf450ad3bafc46e81">
+        <dex dex="/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/pre-dexed/F0F1/debug/binding-generator_4d6b957c5258ba0dcbdd1be1d37a2c63c54bde4e.jar" />
+    </item>
+
+</items>
