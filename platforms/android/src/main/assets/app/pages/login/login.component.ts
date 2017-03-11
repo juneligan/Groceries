@@ -19,12 +19,8 @@ export class LoginComponent implements OnInit {
 
   constructor(private router: Router, private userService: UserService, private page: Page) {
     this.user = new User();
-    // this.user.emailAddress = "test12341234@yopmail.com"
-    // this.user.password = "password"
-  }
-
-  test() {
-    console.log(this.userService.test(this.user));
+    this.user.emailAddress = "test12341234@yopmail.com"
+    this.user.password = "password"
   }
 
   submit() {
@@ -36,8 +32,8 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    console.dump(this.user);
-    this.userService.login(this.user).then( result=> {
+    this.userService.login(this.user)
+    .then( result=> {
       this.router.navigate(["/list"]);
     }).catch(error => {
       alert("Unfortunately we could not find your account.")

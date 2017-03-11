@@ -19,11 +19,11 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
     this.groceryListService.load()
-      .subscribe(loadedGroceries => {
-        loadedGroceries.forEach((groceryObject) => {
-          this.groceryList.unshift(groceryObject);
-        });
-      });
+      // .subscribe(loadedGroceries => {
+      //   loadedGroceries.forEach((groceryObject) => {
+      //     this.groceryList.unshift(groceryObject);
+      //   });
+      // });
   }
 
   add() {

@@ -100,7 +100,6 @@ export class UserDao {
                 }
                 resolve(users);
             }, error => {
-                console.dump(error);
                 reject(null);
             });
         });
@@ -118,6 +117,6 @@ export class UserDao {
         }, error => {
             console.log("SELECT ERROR", error);
         });
-}
+    }
 
 }

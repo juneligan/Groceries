@@ -7,6 +7,7 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { AppComponent } from "./app.component";
 import { routes, navigatableComponents } from "./app.routing";
 import { UserDao } from "./shared/dao/user.dao";
+import { ProductDao } from "./shared/dao/product.dao";
 
 @NgModule({
   imports: [
@@ -20,7 +21,7 @@ import { UserDao } from "./shared/dao/user.dao";
     AppComponent, 
   ...navigatableComponents
   ],
-  providers: [UserDao],
+  providers: [UserDao, ProductDao],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
