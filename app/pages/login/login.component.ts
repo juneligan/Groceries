@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
-import { User } from "../../shared/user/user";
-import { UserService } from "../../shared/user/user.service";
+import { User } from "../../shared/domain/user";
+import { UserService } from "../../shared/service/user.service";
 import { Router } from "@angular/router";
 import { Page } from "ui/page";
 import { Color } from "color";
@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
   login() {
     this.userService.login(this.user)
     .then( result=> {
-      this.router.navigate(["/list"]);
+      this.router.navigate(["/users"]);
     }).catch(error => {
       alert("Unfortunately we could not find your account.")
     });
