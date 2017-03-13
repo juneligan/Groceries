@@ -1,0 +1,12 @@
+"use strict";
+var product_1 = require("../domain/product");
+var category_1 = require("../domain/category");
+var OrderedItem = (function () {
+    function OrderedItem() {
+        this.product = new product_1.Product();
+        this.category = new category_1.Category();
+    }
+    return OrderedItem;
+}());
+exports.OrderedItem = OrderedItem;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoib3JkZXJlZC5pdGVtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsib3JkZXJlZC5pdGVtLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSw2Q0FBNEM7QUFDNUMsK0NBQThDO0FBRTlDO0lBU0k7UUFDSSxJQUFJLENBQUMsT0FBTyxHQUFHLElBQUksaUJBQU8sRUFBRSxDQUFDO1FBQ25DLElBQUksQ0FBQyxRQUFRLEdBQUcsSUFBSSxtQkFBUSxFQUFFLENBQUM7SUFDN0IsQ0FBQztJQUNMLGtCQUFDO0FBQUQsQ0FBQyxBQWJELElBYUM7QUFiWSxrQ0FBVyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb2R1Y3QgfSBmcm9tIFwiLi4vZG9tYWluL3Byb2R1Y3RcIjtcbmltcG9ydCB7IENhdGVnb3J5IH0gZnJvbSBcIi4uL2RvbWFpbi9jYXRlZ29yeVwiO1xuXG5leHBvcnQgY2xhc3MgT3JkZXJlZEl0ZW0ge1xuICAgIG9yZGVyZWRJdGVtSWQ6IG51bWJlcjtcblx0cHJvZHVjdElkOiBudW1iZXI7XG5cdHByb2R1Y3Q6IFByb2R1Y3Q7XG5cdHByaWNlOiBudW1iZXI7XG5cdHF1YW50aXR5OiBudW1iZXI7XG5cdGNhdGVnb3J5OiBDYXRlZ29yeTtcblx0YW1vdW50OiBudW1iZXI7XG5cbiAgICBjb25zdHJ1Y3RvcigpIHtcbiAgICAgICAgdGhpcy5wcm9kdWN0ID0gbmV3IFByb2R1Y3QoKTtcblx0XHR0aGlzLmNhdGVnb3J5ID0gbmV3IENhdGVnb3J5KCk7XG4gICAgfVxufSJdfQ==

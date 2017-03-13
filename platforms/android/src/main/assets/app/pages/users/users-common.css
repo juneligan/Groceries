@@ -1,20 +1,24 @@
-StackLayout {
-  margin-left: 30;
-  margin-right: 30;
-  padding-bottom: 15;
-  background-color: white;
+ListView {
+  opacity: 0;
 }
-Image {
-  margin-top: 5;
-  margin-bottom: 20;
+.visible {
+  animation-name: show;
+  animation-duration: 1s;
 }
-Button, TextField {
-  margin-left: 16;
-  margin-right: 16;
-  margin-bottom: 10;
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-.submit-button {
+.add-bar {
   background-color: #CB1D00;
+  padding: 5 10;
+}
+.add-bar Image {
+  height: 15;
+  vertical-align: center;
+  margin-left: 10;
+  margin-right: 5;
+}
+TextField {
   color: white;
-  margin-top: 20;
 }

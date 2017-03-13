@@ -1,6 +1,6 @@
 
 import { Injectable } from "@angular/core";
-import { User } from "../user/user";
+import { User } from "../domain/user";
 
 var Sqlite = require("nativescript-sqlite");
 
@@ -105,17 +105,25 @@ export class UserDao {
         });
     }
 
-    public fetchAll() {
-    var users = [];
-        this.database.all("SELECT * FROM user").then(rows => {
-            for(var row in rows) {
-                users.push({
+    public fetchAll(): Promise<Array<User>> {
+        return new Promise((resolve, reject) => {
+            this.database.all("SELECT id, firstname, lastname, username, emailAddress FROM user").then(rows => {
+            let users = [];
+                for(var row in rows) {
+                    users.push({
+
+                    "id": rows[row][0],
                     "firstname": rows[row][1],
-                    "lastname": rows[row][2]
-                });
-            }
-        }, error => {
-            console.log("SELECT ERROR", error);
+                    "lastname": rows[row][2],
+                    "username": rows[row][3],
+                    "emailAddress": rows[row][4],
+                    });
+                }
+                resolve(users);
+            }, error => {
+                console.log("SELECT ERROR", error);
+                reject([]);
+            });
         });
     }
 

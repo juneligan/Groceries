@@ -1,3 +1,3 @@
 export class Product {
-  name: string
+  name: string;
 }

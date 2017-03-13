@@ -6,7 +6,7 @@ import "rxjs/add/operator/map";
 import { Component } from "@angular/core";
 import { UserDao } from "../../shared/dao/user.dao";
 
-import { User } from "./user";
+import { User } from "../domain/user";
 import { Config } from "../config";
 import { Couchbase } from "nativescript-couchbase";
 
@@ -23,12 +23,6 @@ export class UserService {
   test(user: User) {
 
     user.username = "test12345"
-  }
-
-  test2(){
-  }
-
-  test3(){
   }
 
   register(user: User): Promise<User | string> {
@@ -48,6 +42,17 @@ export class UserService {
     });
   }
 
+  fetchAll(): Promise<Array<User>> {
+    return new Promise((resolve, reject) => {
+      this.userDao.fetchAll()
+      .then(result => {
+        resolve(result);
+      }).catch(error => {
+        reject(error);
+      });
+    });
+  }
+
   handleErrors(error: Response) {
     console.log(JSON.stringify(error.json()));
     return Observable.throw(error);
@@ -56,11 +61,10 @@ export class UserService {
   login(user: User): Promise<boolean> {
     return new Promise((resolve, reject) => {
       this.userDao.fetchUser(user)
-      .then(result =>{
+      .then(result => {
         resolve(true);
-      })
-      .catch(error =>{
-        reject(false)
+      }).catch(error => {
+        reject(false);
       });
     });
   }

@@ -5,27 +5,15 @@ import "rxjs/add/operator/map";
 
 import { Config } from "../config";
 import { Product } from "../domain/product";
+import { ProductDao } from "../../shared/dao/product.dao";
 
 @Injectable()
 export class ProductService {
   constructor(productDao: ProductDao, http: Http) {}
 
   load() {
-    let headers = new Headers();
-    headers.append("Authorization", "Bearer " + Config.token);
-
-    return this.http.get(Config.apiUrl + "Groceries", {
-      headers: headers
-    })
-    .map(res => res.json())
-    .map(data => {
-      let groceryList = [];
-      data.Result.forEach((grocery) => {
-        groceryList.push(new Grocery(grocery.Id, grocery.Name));
-      });
-      return groceryList;
-    })
-    .catch(this.handleErrors);
+    console.log("load method");
+    
   }
 
   handleErrors(error: Response) {
@@ -34,19 +22,6 @@ export class ProductService {
   }
 
   add(name: string) {
-    let headers = new Headers();
-    headers.append("Authorization", "Bearer " + Config.token);
-    headers.append("Content-Type", "application/json");
-
-    return this.http.post(
-        Config.apiUrl + "Groceries",
-        JSON.stringify({ Name: name }),
-        { headers: headers }
-    )
-    .map(res => res.json())
-    .map(data => {
-        return new Grocery(data.Result.Id, name);
-    })
-    .catch(this.handleErrors);
+    console.log("add method");
   }
 }
