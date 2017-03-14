@@ -1,6 +1,7 @@
 
 import { Injectable } from "@angular/core";
 import { User } from "../domain/user";
+import { Config } from "../config";
 
 var Sqlite = require("nativescript-sqlite");
 
@@ -12,7 +13,7 @@ export class UserDao {
 
     constructor() {
         if(!this.isInstantiated) {
-            (new Sqlite("Groceries.db")).then(db => {
+            (new Sqlite(Config.databaseName)).then(db => {
                 db.execSQL(`CREATE TABLE IF NOT EXISTS user (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT,
                             emailAddress TEXT, password TEXT, firstname TEXT, lastname TEXT)
                 `).then(id => {
@@ -26,7 +27,6 @@ export class UserDao {
             });
         }
     }
-
 
     public insert(user: User): Promise<User> {
         return new Promise((resolve, reject) => {
