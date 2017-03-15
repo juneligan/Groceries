@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
   login() {
     this.userService.login(this.user)
     .then( result=> {
-      this.router.navigate(["/users"]);
+      this.router.navigate(["/dashboard"]);
     }).catch(error => {
       alert("Unfortunately we could not find your account.")
     });

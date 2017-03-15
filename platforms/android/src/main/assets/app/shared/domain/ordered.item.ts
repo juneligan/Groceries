@@ -2,8 +2,7 @@ import { Product } from "../domain/product";
 import { Category } from "../domain/category";
 
 export class OrderedItem {
-    orderedItemId: number;
-	productId: number;
+    id: number;
 	product: Product;
 	price: number;
 	quantity: number;

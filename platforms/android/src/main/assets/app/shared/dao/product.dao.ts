@@ -1,6 +1,7 @@
 
 import { Injectable } from "@angular/core";
 import { Product } from "../domain/product";
+import { Config } from "../config";
 
 var Sqlite = require("nativescript-sqlite");
 
@@ -12,7 +13,7 @@ export class ProductDao {
 
     constructor() {
         if(!this.isInstantiated) {
-            (new Sqlite("Delicacies.db")).then(db => {
+            (new Sqlite(Config.databaseName)).then(db => {
                 db.execSQL(`CREATE TABLE IF NOT EXISTS product (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT,
                             unitPrice TEXT, sellPrice TEXT)
                 `).then(id => {
