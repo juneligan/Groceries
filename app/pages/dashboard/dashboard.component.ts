@@ -5,6 +5,7 @@ import { Router } from "@angular/router";
 import { Page } from "ui/page";
 import { Color } from "color";
 import { View } from "ui/core/view";
+import { TNSFontIconService } from 'nativescript-ng2-fonticon';
 
 @Component({
   selector: "my-app",
@@ -20,7 +21,7 @@ export class DashboardComponent implements OnInit {
 
   @ViewChild("container") container: ElementRef;
 
-  constructor(private router: Router, private userService: UserService) {}
+  constructor(private fonticon: TNSFontIconService, private router: Router, private userService: UserService) {}
 
   add(user: User) {
 

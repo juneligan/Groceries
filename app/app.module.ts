@@ -3,6 +3,7 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { NativeScriptHttpModule } from "nativescript-angular/http";
 import { NativeScriptModule } from "nativescript-angular/platform";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
+import { TNSFontIconModule } from 'nativescript-ng2-fonticon';
 
 import { AppComponent } from "./app.component";
 import { routes, navigatableComponents } from "./app.routing";
@@ -16,7 +17,10 @@ import { CategoryDao } from "./shared/dao/category.dao";
     NativeScriptFormsModule,
     NativeScriptHttpModule,
     NativeScriptRouterModule,
-    NativeScriptRouterModule.forRoot(routes)
+    NativeScriptRouterModule.forRoot(routes),
+    TNSFontIconModule.forRoot({
+        'mdi': 'material-design-icons.css'
+      })
     ],
   declarations: [
     AppComponent, 
