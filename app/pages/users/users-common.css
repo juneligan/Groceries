@@ -22,3 +22,12 @@ ListView {
 TextField {
   color: white;
 }
+
+.search-bar {
+  background-color: lightslategrey;
+  padding: 5 10;
+}
+.mdi {
+  font-family: "Material Icons", "MaterialIcons-Regular";
+  font-size: 48;
+}

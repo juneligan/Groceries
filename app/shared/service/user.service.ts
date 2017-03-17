@@ -27,6 +27,7 @@ export class UserService {
 
   register(user: User): Promise<User | string> {
     return new Promise((resolve, reject) => {
+      //TODO optimize username signup checker
       this.userDao.fetchUserByUsernameOrEmailAddress(user)
       .then(result => {
         reject(null)
@@ -62,6 +63,7 @@ export class UserService {
     return new Promise((resolve, reject) => {
       this.userDao.fetchUser(user)
       .then(result => {
+                console.log("IM HERE");
         resolve(true);
       }).catch(error => {
         reject(false);
