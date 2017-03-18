@@ -17,6 +17,8 @@
     "symbol-observable": true,
     "url": true,
     "nativescript-couchbase": true,
+    "nativescript-material-icons": true,
+    "nativescript-ng2-fonticon": true,
     "nativescript-sqlite": true,
     "nativescript-theme-core": true,
     "tns-core-modules": true,

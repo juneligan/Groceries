@@ -5,6 +5,7 @@ import { Router } from "@angular/router";
 import { Page } from "ui/page";
 import { Color } from "color";
 import { View } from "ui/core/view";
+import { TNSFontIconService } from 'nativescript-ng2-fonticon';
 
 @Component({
   selector: "my-app",
@@ -12,12 +13,13 @@ import { View } from "ui/core/view";
   templateUrl: "pages/login/login.html",
   styleUrls: ["pages/login/login-common.css", "pages/login/login.css"]
 })
+
 export class LoginComponent implements OnInit {
   user: User;
   isLoggingIn = true;
   @ViewChild("container") container: ElementRef;
 
-  constructor(private router: Router, private userService: UserService, private page: Page) {
+  constructor(private fonticon: TNSFontIconService, private router: Router, private userService: UserService, private page: Page) {
     this.user = new User();
     this.user.emailAddress = "test12341234@yopmail.com"
     this.user.password = "password"
@@ -62,4 +64,5 @@ export class LoginComponent implements OnInit {
     this.page.actionBarHidden = true;
     this.page.backgroundImage = "res://bg_login";
   }
+  
 }

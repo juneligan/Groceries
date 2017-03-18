@@ -36,6 +36,7 @@ export class RoleDao {
                 resolve(this.fetchRoleById(id));
             }, error => {
                 console.log("INSERT ERROR", error);
+                reject(null)
             });
         });
     }

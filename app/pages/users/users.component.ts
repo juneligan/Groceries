@@ -41,6 +41,7 @@ export class UsersComponent implements OnInit {
   }
 
   search() {
+    
     alert("searching user. . . ");
     
   }

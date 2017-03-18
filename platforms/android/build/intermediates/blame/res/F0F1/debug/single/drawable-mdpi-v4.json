@@ -152,12 +152,12 @@
         "source": "/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/res/merged/F0F1/debug/drawable-mdpi-v4/nonselected.png",
-        "source": "/home/unknownhello/my-workspace/Groceries/platforms/android/src/main/res/drawable-mdpi/nonselected.png"
-    },
-    {
         "merged": "/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/res/merged/F0F1/debug/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
         "source": "/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/res/merged/F0F1/debug/drawable-mdpi-v4/nonselected.png",
+        "source": "/home/unknownhello/my-workspace/Groceries/platforms/android/src/main/res/drawable-mdpi/nonselected.png"
     },
     {
         "merged": "/home/unknownhello/my-workspace/Groceries/platforms/android/build/intermediates/res/merged/F0F1/debug/drawable-mdpi-v4/logo_login.png",

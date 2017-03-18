@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
-import { User } from "../../shared/user/user";
-import { UserService } from "../../shared/user/user.service";
+import { User } from "../../shared/domain/user";
+import { UserService } from "../../shared/service/user.service";
 import { Router } from "@angular/router";
 import { Page } from "ui/page";
 import { Color } from "color";
@@ -19,12 +19,8 @@ export class LoginComponent implements OnInit {
 
   constructor(private router: Router, private userService: UserService, private page: Page) {
     this.user = new User();
-    this.user.email = "test12341234@yopmail.com"
+    this.user.emailAddress = "test12341234@yopmail.com"
     this.user.password = "password"
-  }
-
-  test() {
-    this.userService.insert();
   }
 
   submit() {
@@ -37,28 +33,27 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.userService.login(this.user)
-        .subscribe(
-            () => this.router.navigate(["/list"]),
-            (error) => alert("Unfortunately we could not find your account.")
-        );
+    .then( result=> {
+      this.router.navigate(["/dashboard"]);
+    }).catch(error => {
+      alert("Unfortunately we could not find your account.")
+    });
   }
 
   signUp() {
     this.userService.register(this.user)
-      .subscribe(
-        () => {
-          alert("Your account was successfully created.");
-          this.toggleDisplay();
-        },
-        () => alert("Unfortunately we were unable to create your account.")
-      );
+    .then(result => {
+      alert("Account added successfully.");
+    }).catch(error => {
+      alert("There's problem with the account, contact admin.");
+    });
   }
 
   toggleDisplay() {
     this.isLoggingIn = !this.isLoggingIn;
     let container = <View>this.container.nativeElement;
     container.animate({
-      backgroundColor: this.isLoggingIn ? new Color("white") : new Color("#301217"),
+      backgroundColor: this.isLoggingIn ? new Color("white") : new Color("#bbbbbb"),
       duration: 200
     });
   }

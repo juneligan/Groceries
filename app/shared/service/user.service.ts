@@ -8,7 +8,6 @@ import { UserDao } from "../../shared/dao/user.dao";
 
 import { User } from "../domain/user";
 import { Config } from "../config";
-import { Couchbase } from "nativescript-couchbase";
 
 var Sqlite = require("nativescript-sqlite");
 
@@ -28,12 +27,12 @@ export class UserService {
   register(user: User): Promise<User | string> {
     return new Promise((resolve, reject) => {
       //TODO optimize username signup checker
-      this.userDao.fetchUserByUsernameOrEmailAddress(user)
+      this.userDao.fetchUserByEmailAddress(user)
       .then(result => {
         reject(null)
       }).catch(error => {
-        this.userDao.insert(user).
-        then(result => {
+        this.userDao.insert(user)
+        .then(result => {
           resolve(result)})
         .catch(error =>{
           reject("Failed to insert User.");// need exception here;
@@ -41,6 +40,10 @@ export class UserService {
 
       });
     });
+  }
+
+  searchUserString(userString: any) {
+    
   }
 
   fetchAll(): Promise<Array<User>> {

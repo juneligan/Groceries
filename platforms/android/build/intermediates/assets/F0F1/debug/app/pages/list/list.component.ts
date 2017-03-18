@@ -9,6 +9,7 @@ import { TextField } from "ui/text-field";
   styleUrls: ["pages/list/list-common.css", "pages/list/list.css"],
   providers: [GroceryListService]
 })
+
 export class ListComponent implements OnInit {
   groceryList: Array<Grocery> = [];
   grocery = "";
@@ -18,11 +19,11 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
     this.groceryListService.load()
-      .subscribe(loadedGroceries => {
-        loadedGroceries.forEach((groceryObject) => {
-          this.groceryList.unshift(groceryObject);
-        });
-      });
+      // .subscribe(loadedGroceries => {
+      //   loadedGroceries.forEach((groceryObject) => {
+      //     this.groceryList.unshift(groceryObject);
+      //   });
+      // });
   }
 
   add() {

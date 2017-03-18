@@ -8,7 +8,6 @@ import { UserDao } from "../../shared/dao/user.dao";
 
 import { User } from "../domain/user";
 import { Config } from "../config";
-import { Couchbase } from "nativescript-couchbase";
 
 var Sqlite = require("nativescript-sqlite");
 
@@ -27,7 +26,8 @@ export class UserService {
 
   register(user: User): Promise<User | string> {
     return new Promise((resolve, reject) => {
-      this.userDao.fetchUserByUsernameOrEmailAddress(user)
+      //TODO optimize username signup checker
+      this.userDao.fetchUserByEmailAddress(user)
       .then(result => {
         reject(null)
       }).catch(error => {
@@ -62,6 +62,7 @@ export class UserService {
     return new Promise((resolve, reject) => {
       this.userDao.fetchUser(user)
       .then(result => {
+                console.log("IM HERE");
         resolve(true);
       }).catch(error => {
         reject(false);

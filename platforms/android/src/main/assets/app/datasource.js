@@ -1,0 +1,11 @@
+"use strict";
+var Datasource = (function () {
+    function Datasource() {
+    }
+    return Datasource;
+}());
+Datasource.databaseName = "OneProject.db";
+Datasource.V1__map = { id: 1, description: "V1__testing_schema_version" };
+Datasource.latest_version = Datasource.V1__map.id;
+exports.Datasource = Datasource;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGF0YXNvdXJjZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImRhdGFzb3VyY2UudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBO0lBQUE7SUFJQSxDQUFDO0lBQUQsaUJBQUM7QUFBRCxDQUFDLEFBSkQ7QUFDUyx1QkFBWSxHQUFHLGVBQWUsQ0FBQTtBQUM5QixrQkFBTyxHQUFHLEVBQUMsRUFBRSxFQUFFLENBQUMsRUFBRSxXQUFXLEVBQUUsNEJBQTRCLEVBQUMsQ0FBQTtBQUM1RCx5QkFBYyxHQUFHLFVBQVUsQ0FBQyxPQUFPLENBQUMsRUFBRSxDQUFBO0FBSGxDLGdDQUFVIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNsYXNzIERhdGFzb3VyY2Uge1xuICBzdGF0aWMgZGF0YWJhc2VOYW1lID0gXCJPbmVQcm9qZWN0LmRiXCJcbiAgc3RhdGljIFYxX19tYXAgPSB7aWQ6IDEsIGRlc2NyaXB0aW9uOiBcIlYxX190ZXN0aW5nX3NjaGVtYV92ZXJzaW9uXCJ9XG4gIHN0YXRpYyBsYXRlc3RfdmVyc2lvbiA9IERhdGFzb3VyY2UuVjFfX21hcC5pZFxufSJdfQ==

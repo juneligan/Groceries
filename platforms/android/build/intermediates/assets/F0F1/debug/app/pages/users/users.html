@@ -1,0 +1,26 @@
+<GridLayout rows="auto, *">
+
+  <GridLayout row="0" columns="*, auto" class="add-bar">
+    <TextField #groceryTextField [text]="user" hint="Enter a grocery item" col="0"></TextField>
+    <Image src="res://add" (tap)="add()" col="1"></Image>
+    
+  </GridLayout>
+
+  <ListView [items]="userList" row="1" class="small-spacing"  [class.visible]="listLoaded">>
+    <template let-item="item">
+      <Label [text]="item.username" class="medium-spacing"></Label>
+    </template>
+  </ListView>
+  <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <ListView items="{{ glyphs }}">
+        <ListView.itemTemplate>
+            <StackLayout orientation="horizontal">
+                <Label text="{{ icon }}" class="icon"></Label>
+                <Label text="{{ code }}" ></Label>
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</Page>
+
+<ActivityIndicator [busy]="isLoading" [visibility]="isLoading ? 'visible' : 'collapse'" row="1" horizontalAlignment="center" verticalAlignment="center"></ActivityIndicator>
+</GridLayout>

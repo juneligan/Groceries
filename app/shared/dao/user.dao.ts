@@ -15,7 +15,8 @@ export class UserDao {
         if(!this.isInstantiated) {
             (new Sqlite(Config.databaseName)).then(db => {
                 db.execSQL(`CREATE TABLE IF NOT EXISTS user (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT,
-                            emailAddress TEXT, password TEXT, firstname TEXT, lastname TEXT)
+                            emailAddress TEXT, password TEXT, firstname TEXT, lastname TEXT, roleId INTEGER,
+                            FOREIGN KEY(roleId) REFERENCES role(id))
                 `).then(id => {
                     this.database = db;
                     this.isInstantiated = true;
@@ -60,13 +61,13 @@ export class UserDao {
     }
 
 
-    public fetchUserByUsernameOrEmailAddress(user: User): Promise<User> {
+    public fetchUserByEmailAddress(user: User): Promise<User> {
         console.log(user.emailAddress);
         console.log(user.username);
         console.log(user.password);
         return new Promise((resolve, reject) => {
-            this.database.all("SELECT id, firstname, lastname, username, emailAddress FROM user where emailAddress = ? OR username = ?",
-            [user.emailAddress, user.username]).then(rows => {
+            this.database.all("SELECT id, firstname, lastname, username, emailAddress FROM user where emailAddress = ?",
+            [user.emailAddress]).then(rows => {
              let users = [];
                 for(var row in rows) {
                     users.push({
@@ -77,8 +78,44 @@ export class UserDao {
                         "emailAddress": rows[row][4]
                     });
                 }
-                resolve(users);
+                console.log("IM HERE");
+                if(users.length > 0) {
+                    resolve(users);
+                } else {
+                    reject(null);
+                }
             }, error => {
+
+                console.log("IM HERE REJECTED");
+                reject(null);
+            });
+        });
+    }
+
+    public searchString(userString: any) {
+        
+        return new Promise((resolve, reject) => {
+            this.database.all("SELECT id, firstname, lastname, username, emailAddress FROM user where (emailAddress like '%?%') OR (username like '%?%')"
+            ,[userString]).then(rows => {
+             let users = [];
+                for(var row in rows) {
+                    users.push({
+                        "id": rows[row][0],
+                        "firstname": rows[row][1],
+                        "lastname": rows[row][2],
+                        "username": rows[row][3],
+                        "emailAddress": rows[row][4]
+                    });
+                }
+                console.log("IM HERE");
+                if(users.length > 0) {
+                    resolve(users);
+                } else {
+                    reject(null);
+                }
+            }, error => {
+
+                console.log("IM HERE REJECTED");
                 reject(null);
             });
         });
@@ -98,7 +135,11 @@ export class UserDao {
                         "emailAddress": rows[row][4]
                     });
                 }
-                resolve(users);
+                if(users.length > 0) {
+                    resolve(users);
+                } else {
+                    reject(null);
+                }
             }, error => {
                 reject(null);
             });
